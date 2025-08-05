@@ -18,7 +18,7 @@ const SentimentAnalysis = () => {
   const [error, setError] = useState(null);
   const [lastUpdated, setLastUpdated] = useState(null);
 
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'https://backend-dashboard-kyeo.onrender.com';
 
   const fetchSentimentData = async () => {
     setLoading(true);

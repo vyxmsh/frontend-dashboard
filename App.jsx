@@ -65,7 +65,7 @@ import EngagementRateCard from './components/EngagementRateCard';
 import SentimentAnalysis from './components/SentimentAnalysis';
 
 // API Configuration
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://backend-dashboard-kyeo.onrender.com';
 
 // Data fetching functions
 const fetchYouTubeData = async (channelUrl) => {

@@ -7,7 +7,7 @@ const EngagementRateCard = () => {
   const [error, setError] = useState(null);
   const [showTooltip, setShowTooltip] = useState(false);
 
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'https://backend-dashboard-kyeo.onrender.com';
 
   const fetchEngagementData = async () => {
     setLoading(true);

@@ -12,7 +12,7 @@ const PerformanceAnalysis = ({
   const [error, setError] = useState(null);
 
   // API Configuration
-  const API_BASE_URL = 'http://localhost:5000/api';
+  const API_BASE_URL = 'https://backend-dashboard-kyeo.onrender.com';
 
   // Fetch performance data from API
   const fetchPerformanceData = async () => {
