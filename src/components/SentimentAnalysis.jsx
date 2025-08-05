@@ -25,7 +25,7 @@ const SentimentAnalysis = () => {
     setError(null);
     
     try {
-      const response = await fetch(`${API_BASE_URL}/sentiment-analysis`);
+      const response = await fetch(`${API_BASE_URL}/api/sentiment-analysis`);
       if (!response.ok) {
         throw new Error(`API error: ${response.status}`);
       }

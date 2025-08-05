@@ -14,7 +14,7 @@ const EngagementRateCard = () => {
     setError(null);
     
     try {
-      const response = await fetch(`${API_BASE_URL}/engagement-rate`);
+      const response = await fetch(`${API_BASE_URL}/api/engagement-rate`);
       if (!response.ok) {
         throw new Error(`API error: ${response.status}`);
       }

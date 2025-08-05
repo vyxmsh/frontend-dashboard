@@ -15,7 +15,7 @@ const LikesDislikesChart = () => {
     setError(null);
     
     try {
-      const response = await fetch(`${API_BASE_URL}/likes-dislikes`);
+      const response = await fetch(`${API_BASE_URL}/api/likes-dislikes`);
       if (!response.ok) {
         throw new Error(`API error: ${response.status}`);
       }

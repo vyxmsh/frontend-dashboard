@@ -21,7 +21,7 @@ const PerformanceAnalysis = ({
     
     try {
       // Fetch Gemini AI-powered performance data from backend
-      const performanceResponse = await fetch(`${API_BASE_URL}/performance`);
+      const performanceResponse = await fetch(`${API_BASE_URL}/api/performance`);
       if (!performanceResponse.ok) {
         throw new Error(`Performance API error: ${performanceResponse.status}`);
       }

@@ -70,7 +70,7 @@ const API_BASE_URL = 'https://backend-dashboard-kyeo.onrender.com';
 // Data fetching functions
 const fetchYouTubeData = async (channelUrl) => {
   try {
-    const response = await fetch(`${API_BASE_URL}/fetch-youtube-data`, {
+    const response = await fetch(`${API_BASE_URL}/api/fetch-youtube-data`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const fetchYouTubeData = async (channelUrl) => {
 
 const fetchOverviewData = async () => {
   try {
-    const response = await fetch(`${API_BASE_URL}/overview`);
+    const response = await fetch(`${API_BASE_URL}/api/overview`);
     if (!response.ok) throw new Error('Failed to fetch overview data');
     return await response.json();
   } catch (error) {
